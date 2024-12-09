@@ -3,6 +3,7 @@
 ## This program is being debugged. Please don't use it unless you wolud like to debug it.
 #
 説明
+#
 MATLABからOpenDSSを希望して配電系統のシミュレーションをするプログラムです。
 低圧系統と高圧系統の電圧や潮流のグラフや，電源から流入する電力のグラフを描画することを想定しています．
 低圧系統と高圧系統の電圧や潮流グラフは，すべてのノードや需要家におけるシミュレーション結果を1枚にまとめたものと，各ノードや各需要家ごとのグラフが出力される想定です．
