@@ -1,0 +1,19 @@
+/* New LineGeometry.pppJapan_avg_Three-Phase_D1_OH_ACB nconds= 3 nphases= 3
+// ~ cond= 1 wire= Japan_avg x= -0.5 h= 8 units= m
+// ~ cond= 2 wire= Japan_avg x= 0.5 h= 8 units= m
+// ~ cond= 3 wire= Japan_avg x= 0.000000 h= 8 units= m
+~ reduce=y
+*/
+New linecode.JpnAvg_ThreePhase R1=0.2632 X1=0.3385 R0=0.5853 X0=1.328 units=km !R0 and X0 are from circuit example
+
+New linecode.LV_12 nphases=2 BaseFreq=50
+~ R1=0.0498 X1=0.0261 units=km
+//~ rmatrix = (0.0498 0.001 | 0.001 0.0498 )
+//~ xmatrix = (0.0261 0.001 | 0.001 0.0261)
+//~ units=km
+
+New linecode.LV_N nphases=1 BaseFreq=50
+~ R1=0.0446 X1=0.0100 units=km
+//~ rmatrix = (0.0446 0.001| 0.001 0.0446)
+//~ xmatrix = (0.0100 0.0001 | 0.0001 0.0100)
+//~ units=km

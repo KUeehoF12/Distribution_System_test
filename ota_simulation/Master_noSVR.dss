@@ -1,0 +1,36 @@
+Clear
+
+New Circuit.6_D3_6kV_D1_Source
+Set basefrequency=50
+Redirect Vmain.dss
+
+Redirect RegControl_noSVR.dss
+
+Redirect LineCode.dss
+Redirect Line_noSVR.dss
+
+
+!-----Settings--------
+Set EarthModel = Carson
+Set %growth=0.000
+Set maxiterations =1000
+Set Maxcontroliter =1000
+! Setkvbase in Transformer.dss 
+
+!-----Load Flow------
+//calcv 
+//Solve 
+//Show Voltages LG Node 
+//Show Powers kVA Elem 
+//Show Currents Elem 
+
+!-----Plot Circuit ------
+buscoords nodecoords.csv
+//plot circuit quantity=voltage 
+
+!-----Fault Current------
+!Edit "Vsource.source" Pu=1.00000
+!set mode=fault
+!Solve 
+!Show faults 
+!----------------------------

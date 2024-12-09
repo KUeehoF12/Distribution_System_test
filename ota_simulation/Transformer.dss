@@ -1,0 +1,9 @@
+New Transformer.FakeRegulator_A Phases=1 Windings=2 XHL=0.00000100
+~ wdg=1 bus=internal6_D3_6kV_D1_Source.1 conn=wye kV=3.810512 kva=38105.11718750 %R=0.00000100
+~ wdg=2 bus=6_D3_6kV_D1_Source.1 conn=wye kV=3.810512 kva=38105.11718750 %R=0.00000100 NumTaps=1000.0000 MaxTap=1.2000 MinTap=1.0000
+New Transformer.FakeRegulator_B Phases=1 Windings=2 XHL=0.00000100
+~ wdg=1 bus=internal6_D3_6kV_D1_Source.2 conn=wye kV=3.810512 kva=38105.11718750 %R=0.00000100
+~ wdg=2 bus=6_D3_6kV_D1_Source.2 conn=wye kV=3.810512 kva=38105.11718750 %R=0.00000100 NumTaps=1000.0000 MaxTap=1.2000 MinTap=1.0000
+New Transformer.FakeRegulator_C Phases=1 Windings=2 XHL=0.00000100
+~ wdg=1 bus=internal6_D3_6kV_D1_Source.3 conn=wye kV=3.810512 kva=38105.11718750 %R=0.00000100
+~ wdg=2 bus=6_D3_6kV_D1_Source.3 conn=wye kV=3.810512 kva=38105.11718750 %R=0.00000100 NumTaps=1000.0000 MaxTap=1.2000 MinTap=1.0000

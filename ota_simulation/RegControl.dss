@@ -1,0 +1,16 @@
+! Create new SVRs
+! 100V, 9 steps, delay=60sec
+! Located between node 16 and 23
+New Transformer.SVR_A phases=1 windings=2 buses=(SVR.1, SVR_out.1) conns=(wye, wye) kvs=("6.6 3 sqrt /", "6.6 3 sqrt /")
+~ kvas=(10000, 10000)  Wdg=2 Maxtap=1.0682 Mintap=0.9318 ppm=0 NumTap=9
+New Transformer.SVR_B like=SVR_A buses=(SVR.2, SVR_out.2) 
+New Transformer.SVR_C like=SVR_A buses=(SVR.3, SVR_out.3) 
+
+New RegControl.SVR_A transformer=SVR_A bus=OH41.1 winding=2 vreg=100 ptratio=38.1051 tapdelay=60 maxtapchange=10 band=2 inversetime=y
+!~  reversible=yes revvreg=100 revdelay=60 debugtrace=yes revband=2
+New RegControl.SVR_B like=SVR_A transformer=SVR_B bus=OH41.2
+New RegControl.SVR_C like=SVR_A transformer=SVR_C bus=OH41.3
+
+New Monitor.SVR_A Transformer.SVR_A mode=2 terminal=2 
+New Monitor.SVR_B Transformer.SVR_B mode=2 terminal=2
+New Monitor.SVR_C Transformer.SVR_C mode=2 terminal=2

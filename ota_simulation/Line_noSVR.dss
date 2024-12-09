@@ -1,0 +1,53 @@
+New Line.OH1 Bus1= 6_D3_6kV_D1_Source.1.2.3 Bus2= OH1.1.2.3 length= 0.31 units= km linecode=JpnAvg_ThreePhase !Geometry= pppJapan_avg_Three-Phase_D1_OH_ACB
+New Line.OH2 Bus1= OH1.1.2.3 Bus2= OH2.1.2.3 length= .31 units= km linecode=JpnAvg_ThreePhase !Geometry= pppJapan_avg_Three-Phase_D1_OH_ACB
+New Line.OH7 Bus1= OH2.1.2.3 Bus2= OH7.1.2.3 length= .31 units= km linecode=JpnAvg_ThreePhase !Geometry= pppJapan_avg_Three-Phase_D1_OH_ACB
+New Line.OH9 Bus1= OH7.1.2.3 Bus2= OH9.1.2.3 length= .31 units= km linecode=JpnAvg_ThreePhase !Geometry= pppJapan_avg_Three-Phase_D1_OH_ACB
+New Line.OH10 Bus1= OH9.1.2.3 Bus2= OH10.1.2.3 length= .31 units= km linecode=JpnAvg_ThreePhase !Geometry= pppJapan_avg_Three-Phase_D1_OH_ACB
+New Line.OH11 Bus1= OH10.1.2.3 Bus2= OH11.1.2.3 length= .30 units= km linecode=JpnAvg_ThreePhase !Geometry= pppJapan_avg_Three-Phase_D1_OH_ACB
+New Line.OH13 Bus1= OH11.1.2.3 Bus2= OH13.1.2.3 length= .32 units= km linecode=JpnAvg_ThreePhase !Geometry= pppJapan_avg_Three-Phase_D1_OH_ACB
+New Line.OH12 Bus1= OH11.1.2.3 Bus2= OH12.1.2.3 length= .19 units= km linecode=JpnAvg_ThreePhase !Geometry= pppJapan_avg_Three-Phase_D1_OH_ACB
+New Line.OH8 Bus1= OH7.1.2.3 Bus2= OH8.1.2.3 length= .49 units= km linecode=JpnAvg_ThreePhase !Geometry= pppJapan_avg_Three-Phase_D1_OH_ACB
+New Line.OH4 Bus1= OH2.1.2.3 Bus2= OH4.1.2.3 length= .30 units= km linecode=JpnAvg_ThreePhase !Geometry= pppJapan_avg_Three-Phase_D1_OH_ACB
+New Line.OH6 Bus1= OH4.1.2.3 Bus2= OH6.1.2.3 length= .32 units= km linecode=JpnAvg_ThreePhase !Geometry= pppJapan_avg_Three-Phase_D1_OH_ACB
+New Line.OH5 Bus1= OH4.1.2.3 Bus2= OH5.1.2.3 length= .19 units= km linecode=JpnAvg_ThreePhase !Geometry= pppJapan_avg_Three-Phase_D1_OH_ACB
+New Line.OH3 Bus1= OH2.1.2.3 Bus2= OH3.1.2.3 length= .49 units= km linecode=JpnAvg_ThreePhase !Geometry= pppJapan_avg_Three-Phase_D1_OH_ACB
+New Line.OH14 Bus1= OH10.1.2.3 Bus2= OH14.1.2.3 like=OH1! length= .31
+New Line.OH15 Bus1= OH14.1.2.3 Bus2= OH15.1.2.3 like=OH8! length= .49
+New Line.OH16 Bus1= OH14.1.2.3 Bus2= OH16.1.2.3 like=OH1 !length= .31
+New Line.OH17 Bus1= OH16.1.2.3 Bus2= OH17.1.2.3 like=OH4 !length= .30
+New Line.OH18 Bus1= OH17.1.2.3 Bus2= OH18.1.2.3 like=OH12 !length= .19
+New Line.OH19 Bus1= OH17.1.2.3 Bus2= OH19.1.2.3 like=OH13 !length= .32
+New Line.OH20 Bus1= OH16.1.2.3 Bus2= OH20.1.2.3 like=OH17
+New Line.OH21 Bus1= OH20.1.2.3 Bus2= OH21.1.2.3 like=OH18
+New Line.OH22 Bus1= OH20.1.2.3 Bus2= OH22.1.2.3 like=OH19
+
+ !if using SVR use these lines
+/*New Line.OH23 Bus1= SVR_out.1.2.3 Bus2= OH23.1.2.3 like=OH1 length=.155
+New Line.SVR Bus1= OH16.1.2.3 Bus2= SVR.1.2.3 like=OH1 length=.155
+*/
+
+! if NOT using SVRs
+New Line.OH23 Bus1= OH16.1.2.3 Bus2= OH23.1.2.3 like=OH1
+
+New Line.OH24 Bus1= OH23.1.2.3 Bus2= OH24.1.2.3 like=OH15
+New Line.OH25 Bus1= OH23.1.2.3 Bus2= OH25.1.2.3 like=OH1
+New Line.OH26 Bus1= OH25.1.2.3 Bus2= OH26.1.2.3 like=OH17
+New Line.OH27 Bus1= OH26.1.2.3 Bus2= OH27.1.2.3 like=OH18
+New Line.OH28 Bus1= OH26.1.2.3 Bus2= OH28.1.2.3 like=OH19
+New Line.OH29 Bus1= OH25.1.2.3 Bus2= OH29.1.2.3 like=OH1
+New Line.OH30 Bus1= OH29.1.2.3 Bus2= OH30.1.2.3 like=OH24
+New Line.OH31 Bus1= OH29.1.2.3 Bus2= OH31.1.2.3 like=OH1
+New Line.OH32 Bus1= OH31.1.2.3 Bus2= OH32.1.2.3 like=OH26
+New Line.OH33 Bus1= OH32.1.2.3 Bus2= OH33.1.2.3 like=OH27
+New Line.OH34 Bus1= OH32.1.2.3 Bus2= OH34.1.2.3 like=OH28
+New Line.OH35 Bus1= OH31.1.2.3 Bus2= OH35.1.2.3 like=OH1
+New Line.OH36 Bus1= OH35.1.2.3 Bus2= OH36.1.2.3 like=OH1
+New Line.OH37 Bus1= OH36.1.2.3 Bus2= OH37.1.2.3 like=OH32
+New Line.OH38 Bus1= OH37.1.2.3 Bus2= OH38.1.2.3 like=OH33
+New Line.OH39 Bus1= OH37.1.2.3 Bus2= OH39.1.2.3 like=OH34
+New Line.OH40 Bus1= OH36.1.2.3 Bus2= OH40.1.2.3 like=OH30
+New Line.OH41 Bus1= OH36.1.2.3 Bus2= OH41.1.2.3 like=OH1
+New Line.OH42 Bus1= OH41.1.2.3 Bus2= OH42.1.2.3 like=OH1
+New Line.OH43 Bus1= OH42.1.2.3 Bus2= OH43.1.2.3 like=OH37
+New Line.OH44 Bus1= OH43.1.2.3 Bus2= OH44.1.2.3 like=OH38
+New Line.OH45 Bus1= OH43.1.2.3 Bus2= OH45.1.2.3 like=OH39
