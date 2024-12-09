@@ -1,6 +1,6 @@
 # Distribution_System_test
 ## デバッグ中のプログラムです．デバッグ以外の目的で使わないでください．
-## This program is being debugged. Please don't use it unless you wolud like to debug it.
+## This program is being debugged. Please don't use it unless you would like to debug it.
 #
 説明
 #
